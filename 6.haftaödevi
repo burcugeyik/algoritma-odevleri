@@ -1,0 +1,39 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Kullanıcıdan 3 değer girilmesini iste
+        Console.Write("A değerini girin: ");
+        int a = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("B değerini girin: ");
+        int b = Convert.ToInt32(Console.ReadLine());
+
+        Console.Write("C değerini girin: ");
+        int c = Convert.ToInt32(Console.ReadLine());
+
+        // Toplam hesaplamaları
+        int toplam = a + b;
+        toplam = toplam - c;
+
+        // Toplam 180'e göre kontrol
+        if (toplam < 180)
+        {
+            Console.WriteLine("Üçgen değil.");
+        }
+        else if (toplam == 180)
+        {
+            Console.WriteLine("Üçgen.");
+        }
+        else // toplam > 180
+        {
+            Console.WriteLine("Üçgen değil.");
+        }
+
+        // Programın durması için bekleme
+        Console.WriteLine("Program tamamlandı. Çıkmak için bir tuşa basın.");
+        Console.ReadKey();
+    }
+}
