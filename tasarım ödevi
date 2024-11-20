@@ -1,0 +1,17 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Örnek sayılar
+        double sayi1 = 4;
+        double sayi2 = 9;
+
+        // Geometrik ortalamayı hesapla
+        double geometrikOrtalama = Math.Sqrt(sayi1 * sayi2);
+
+        // Sonucu yazdır
+        Console.WriteLine("İki sayının geometrik ortalaması: " + geometrikOrtalama);
+    }
+}

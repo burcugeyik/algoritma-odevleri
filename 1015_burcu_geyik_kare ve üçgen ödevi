@@ -1,0 +1,17 @@
+# Üçgenin çevresini hesaplamak için kenar bilgilerini alalım
+kenar1 = float(input("Birinci kenarı giriniz: "))
+kenar2 = float(input("İkinci kenarı giriniz: "))
+kenar3 = float(input("Üçüncü kenarı giriniz: "))
+
+# Üçgenin çevresi hesaplanıyor
+ucgen_cevre = kenar1 + kenar2 + kenar3
+
+# Karenin alanını hesaplamak için kenar bilgisi alalım
+kare_kenar = float(input("Karenin bir kenarını giriniz: "))
+
+# Karenin alanı hesaplanıyor
+kare_alan = kare_kenar ** 2
+
+# Sonuçları ekrana yazdırma
+print(f"Üçgenin çevresi: {ucgen_cevre}")
+print(f"Karenin alanı: {kare_alan}")
