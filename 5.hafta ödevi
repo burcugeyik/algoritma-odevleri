@@ -1,0 +1,24 @@
+class Ogrenci:
+    def __init__(self, ad, soyad, sinav1, sinav2):
+        self.ad = ad
+        self.soyad = soyad
+        self.sinav1 = sinav1
+        self.sinav2 = sinav2
+
+    def hesapla(self):
+        ortalama = (self.sinav1 + self.sinav2) / 2
+        return ortalama
+
+# Öğrenci bilgileri alınır
+def ogrenci_bilgisi_al():
+    ad = input("Öğrencinin adını girin: ")
+    soyad = input("Öğrencinin soyadını girin: ")
+    sinav1 = float(input("Birinci sınav notunu girin: "))
+    sinav2 = float(input("İkinci sınav notunu girin: "))
+    return Ogrenci(ad, soyad, sinav1, sinav2)
+
+# Ana program
+ogrenci = ogrenci_bilgisi_al()
+ortalama = ogrenci.hesapla()
+
+print(f"{ogrenci.ad} {ogrenci.soyad} adlı öğrencinin sınav notlarının ortalaması: {ortalama}")
